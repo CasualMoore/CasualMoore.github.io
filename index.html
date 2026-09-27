@@ -71,6 +71,74 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-rpa02" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/09/27/rpa02/" class="article-date">
+  <time class="dt-published" datetime="2026-09-27T06:15:21.000Z" itemprop="datePublished">2026-09-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/09/27/rpa02/">rpa02</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="RPA实操案例二-Excel表自动填写"><a href="#RPA实操案例二-Excel表自动填写" class="headerlink" title="RPA实操案例二: Excel表自动填写"></a>RPA实操案例二: Excel表自动填写</h1><ol>
+<li><h3 id="业务背景"><a href="#业务背景" class="headerlink" title="业务背景"></a>业务背景</h3>工艺,质量做固定模版报告:</li>
+</ol>
+<ul>
+<li><p>根据销售要求,整理对应资料</p>
+</li>
+<li><p>按模版要求填入对应数据</p>
+</li>
+<li><p>生成产品型号报告<br>数据多,分散在多个位置和子表,人工输入很容易出错.</p>
+</li>
+</ul>
+<ol start="2">
+<li><h3 id="方案设计"><a href="#方案设计" class="headerlink" title="方案设计"></a>方案设计</h3><strong>核心思路:RPA当“数据搬运工”,自动另存为对应产品型号报告</strong><br>第一步:对应关系</li>
+</ol>
+<ul>
+<li><p>将整理好的资料,做好填入模版的位置信息.<br>第二步:自动填写</p>
+</li>
+<li><p>RPA根据对应关系,自动将数据填入模版相应位置<br>第三步:输出</p>
+</li>
+<li><p>根据资料,自动另存为对应产品型号报告<br>第四步:循环</p>
+</li>
+<li><p>RPA根据资料,自动进行下一行数据填下,生成.</p>
+</li>
+</ul>
+<ol start="3">
+<li><h3 id="踩坑记录"><a href="#踩坑记录" class="headerlink" title="踩坑记录"></a>踩坑记录</h3><p><strong>日期格式</strong><br>报告要求自动填写当天日期,但格式非常规.RPA自动工具没有这种格式.<br>**解决:**流程嵌入Python脚本,生成当天日期和相应格式在填入.</p>
+</li>
+<li><h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><p>原本一次90+份报告需要3天时间,现在整理资料,自动生成报告.10分钟就搞定了.<br>&#x3D;&#x3D;🟡“以前是体力活,现在是审核活,轻松多了”&#x3D;&#x3D;</p>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/09/27/rpa02/" data-id="cuidHEIih-oSCOlue0pbhFuOg" data-title="rpa02" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-rpa01" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2026/09/18/rpa01/" class="article-date">
@@ -224,6 +292,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2026/09/27/rpa02/">rpa02</a>
+          </li>
         
           <li>
             <a href="/2026/09/18/rpa01/">rpa01</a>
